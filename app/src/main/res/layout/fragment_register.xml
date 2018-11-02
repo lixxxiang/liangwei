@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <com.android.lixiang.base.utils.view.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/ll_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/statusbar_view_height"
+                android:background="#FFFFFF" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/mLoginBtn"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sign_in"
+                        android:textColor="#5F5F5F"
+                        android:textSize="18dp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/sign_up_close"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="18dp"
+                        android:background="@drawable/ic_close" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/mCloseBtn"
+                        android:layout_width="41dp"
+                        android:layout_height="41dp"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/sign_up_signup_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sign_up"
+                        android:textColor="#5F5F5F"
+                        android:textSize="22dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/sign_up_title_rl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/sign_up_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="“两违”整治综合监管系统"
+                    android:textColor="#F5A623"
+                    android:textSize="24dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <RelativeLayout
+                    android:id="@+id/sign_up_tel_rl"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/sign_up_pfx_tv"
+                        android:layout_width="26dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:text="@string/tel_prefix"
+                        android:textColor="#9B9B9B"
+                        android:textSize="14dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/sign_up_cut_off_rl"
+                        android:layout_width="2px"
+                        android:layout_height="21dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toEndOf="@+id/sign_up_pfx_tv"
+                        android:layout_toRightOf="@+id/sign_up_pfx_tv"
+                        android:background="#DDDDDD" />
+
+                    <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                        android:id="@+id/mTelET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toEndOf="@+id/sign_up_cut_off_rl"
+                        android:layout_toRightOf="@+id/sign_up_cut_off_rl"
+                        android:background="@null"
+                        android:ems="11"
+                        android:hint="@string/sign_up_tel"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="#9B9B9B"
+                        android:textCursorDrawable="@null"
+                        android:textSize="14dp" />
+
+                    <RelativeLayout
+                        android:layout_width="300dp"
+                        android:layout_height="2px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#F4F4F4" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sign_up_vcode_rl"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/sign_up_tel_rl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2px">
+
+                    <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                        android:id="@+id/mVcodeET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="14dp"
+                        android:layout_toLeftOf="@+id/sign_up_cut_off_2_rl"
+                        android:background="@null"
+                        android:ems="4"
+                        android:hint="@string/sign_up_vcode"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="#9B9B9B"
+                        android:textCursorDrawable="@null"
+                        android:textSize="14dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/sign_up_cut_off_2_rl"
+                        android:layout_width="2px"
+                        android:layout_height="21dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="0dp"
+                        android:layout_toLeftOf="@+id/mGetVCodeRL"
+                        android:background="#DDDDDD" />
+
+                    <RelativeLayout
+                        android:id="@+id/mGetVCodeRL"
+                        android:layout_width="120dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <com.android.lixiang.base.utils.view.CountDownTextView
+                            android:id="@+id/mCountDownTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:padding="10dp"
+                            android:text="@string/sign_up_get_vcode"
+                            android:textColor="#5F5F5F"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="300dp"
+                        android:layout_height="2px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#F4F4F4" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/mNextStepBtn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/sign_up_vcode_rl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/sign_up_btn_shape"
+                    android:text="@string/sign_up_next_step"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mVcodeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/mNextStepBtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#9B9B9B"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.android.lixiang.base.utils.view.BounceScrollView>
+</RelativeLayout>

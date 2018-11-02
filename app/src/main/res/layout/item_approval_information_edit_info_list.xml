@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="132dp"
+    android:elevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="24dp"
+            android:text="NO>FSDFSDFSDF"
+            android:textColor="#5C5C5C"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="54dp"
+            android:text="审批材料编号"
+            android:textColor="#5C5C5C"
+            android:textSize="10dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="74dp"
+            android:text="经办单位"
+            android:textColor="#5C5C5C"
+            android:textSize="10dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="94dp"
+            android:text="审批日期"
+            android:textColor="#5C5C5C"
+            android:textSize="10dp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="54dp"
+            android:text="@string/property_owner"
+            android:textColor="#ABABAB"
+            android:textSize="10dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="74dp"
+            android:text="@string/property_owner"
+            android:textColor="#ABABAB"
+            android:textSize="10dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="94dp"
+            android:text="@string/property_owner"
+            android:textColor="#ABABAB"
+            android:textSize="10dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-2dp"
+            android:background="@drawable/img_item_all_info" />
+
+
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-2dp">
+
+            <android.support.v7.widget.AppCompatTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#FFF"
+                android:textSize="14dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/mChoosePropertiesBtn"
+                android:layout_width="62dp"
+                android:layout_height="21dp"
+                android:layout_centerInParent="true"
+                android:background="#6299FF"
+                android:text="添加标签"
+                android:textColor="#FFF"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_check_blue" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

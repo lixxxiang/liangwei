@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="132dp"
+    android:elevation="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/mNumberTV"
+            android:textColor="#5C5C5C"
+            android:text="@string/test"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/mImgIV"
+            android:layout_marginRight="23dp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="23dp"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5C5C5C"
+            android:textSize="10dp"
+            android:text="业主姓名"
+            android:layout_marginTop="54dp"
+            android:layout_marginLeft="23dp" />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5C5C5C"
+            android:textSize="10dp"
+            android:text="@string/credit_id"
+            android:layout_marginTop="74dp"
+            android:layout_marginLeft="23dp" />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5C5C5C"
+            android:textSize="10dp"
+            android:text="电话号码"
+            android:layout_marginTop="94dp"
+            android:layout_marginLeft="23dp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ABABAB"
+            android:textSize="10dp"
+            android:text="@string/test"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/mImgIV"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginLeft="113dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ABABAB"
+            android:textSize="10dp"
+            android:text="@string/test"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/mImgIV"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginLeft="113dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ABABAB"
+            android:textSize="10dp"
+            android:text="@string/test"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/mImgIV"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginLeft="113dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-2dp"
+            android:id="@+id/mImgIV"
+            android:background="@drawable/img_item_all_info"/>
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-2dp">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/test"
+                android:maxLines="5"
+                android:maxLength="20"
+                android:layout_marginLeft="25dp"
+                android:textSize="14dp"
+                android:textColor="#FFF"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

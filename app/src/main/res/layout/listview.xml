@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.android.lixiang.base.utils.view.SwipeRefreshView
+        android:id="@+id/mSRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F0">
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:background="#F0F0F0">
+        </ListView>
+    </com.android.lixiang.base.utils.view.SwipeRefreshView>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textSize="14dp"
+        android:id="@+id/mNoResultTV"
+        android:visibility="gone"
+        android:text="暂无更多结果"
+        android:textColor="#9B9B9B"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+

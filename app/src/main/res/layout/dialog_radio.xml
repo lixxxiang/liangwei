@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/groupBroadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rbtn_BroadcastClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:checked="true"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="20dp"
+            android:paddingLeft="26dp" />
+        <RadioButton
+            android:id="@+id/rbtn_BroadcastFifteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="否"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:drawablePadding="20dp"
+            android:paddingLeft="26dp" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:mapbox_renderTextureMode="true"
+            app:mapbox_cameraZoom="15"
+            app:mapbox_styleUrl="http://bmob-cdn-20607.b0.upaiyun.com/2018/08/27/981883084077745280e89583ff09ee42.json" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp">
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:id="@+id/mMapToolbarBackBtn"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_back_blue"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"/>
+        </RelativeLayout>
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/mMapViewMask"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#FFF">-->
+
+            <!--<ProgressBar-->
+                <!--android:id="@+id/mMapProgressBar"-->
+                <!--android:layout_width="36dp"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:indeterminateTint="#6299FF"-->
+                <!--android:indeterminateTintMode="src_atop" />-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="257dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/mNorthImageView"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/ic_north" />
+
+            <android.support.v7.widget.AppCompatButton
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/mNorthBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginRight="-2dp"
+                android:layout_marginBottom="-4dp" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="217dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/mLayerImageView"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/ic_layer" />
+
+            <android.support.v7.widget.AppCompatButton
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/mLayerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginRight="-2dp"
+                android:layout_marginBottom="-4dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="178dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/ic_locate" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/mLocateBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginRight="-2dp"
+                android:layout_marginBottom="-4dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="28dp"
+            android:layout_height="59dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="105dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="28dp"
+                android:layout_height="59dp"
+                android:background="@drawable/ic_zoom" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/mZoomInBtn"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-2dp"
+                        android:layout_marginTop="-4dp"
+                        android:layout_marginRight="-2dp"
+                        android:layout_marginBottom="-5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/mZoomOutBtn"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-2dp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginRight="-2dp"
+                        android:layout_marginBottom="-4dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#6299FF"
+            android:text="查看轮廓信息"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:id="@+id/mCheckInfoBtn"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mDialogRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7F000000"
+        android:clickable="true"
+        android:focusable="true"
+        >
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_relativelayout_5px_shadow"
+            android:layout_centerInParent="true">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ProgressBar
+                    android:id="@+id/mProgressBar2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:indeterminateTint="#FFF"
+                    android:indeterminateTintMode="src_atop" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加载中"
+                    android:layout_toRightOf="@+id/mProgressBar2"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#FFF" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

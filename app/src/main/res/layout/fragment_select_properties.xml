@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <com.android.lixiang.base.utils.view.BounceScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mChooseSpeciesRLToolbar"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/mChooseSpeciesRL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/mChooseSpeciesRLToolbar">
+
+                <ListView
+                    android:id="@+id/speciesitems"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:divider="@drawable/divider"
+                    android:scrollbars="none"/>
+
+            </RelativeLayout>
+        </com.android.lixiang.base.utils.view.BounceScrollView>
+
+        <View
+            android:id="@+id/mChooseSpeciesRLStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mChooseSpeciesRLToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/mChooseSpeciesRLStatusBar"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText.Gray" />
+
+        <RelativeLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/mDoneBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#6299FF"
+            android:layout_alignParentBottom="true">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="确认"
+                android:textSize="18dp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

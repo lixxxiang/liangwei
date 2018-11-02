@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+        <com.android.lixiang.base.utils.view.SwipeRefreshView
+            android:id="@+id/mAllInfoSRL"
+            android:layout_below="@+id/mAllInfoToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0F0F0">
+            <ListView
+                android:id="@+id/mAllInfoRV"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:background="#F0F0F0" />
+        </com.android.lixiang.base.utils.view.SwipeRefreshView>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mAllInfoToolbar"
+            android:layout_marginTop="14dp"
+            android:textSize="14dp"
+            android:id="@+id/mNoResultTV"
+            android:visibility="gone"
+            android:text="暂无更多结果"
+            android:textColor="#9B9B9B"
+            android:layout_centerHorizontal="true"/>
+        <View
+            android:id="@+id/fake_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mAllInfoToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/fake_status_bar"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText.Gray" >
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mEditBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="编辑"
+                android:padding="13dp"
+                android:layout_marginEnd="5dp"
+                android:textStyle="normal"
+                android:textColor="#5C5C5C"
+                android:textSize="14dp"/>
+        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#6299FF"
+            android:text="删除"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:visibility="gone"
+            android:id="@+id/mDeleteBtn"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

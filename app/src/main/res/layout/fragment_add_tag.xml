@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <com.android.lixiang.base.utils.view.BounceScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mAddTagToolbar"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/mChooseSpeciesRL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/mChooseSpeciesRLToolbar">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:background="#F0F0F0"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp">
+                    <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                        android:id="@+id/mAddTagET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toLeftOf="@+id/mCounts"
+                        android:layout_marginRight="8dp"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:hint="请用简短的文字描述当前信息的状态"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHint="#9B9B9B"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="12dp" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/mCounts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20/20"
+                        android:textSize="12dp"
+                        android:textColor="#9B9B9B"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp"/>
+                </RelativeLayout>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="例如：待审核，审核完成，缺失XX资料，补齐资料…"
+                    android:textSize="10dp"
+                    android:textColor="#9B9B9B"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginLeft="15dp"/>
+
+            </RelativeLayout>
+        </com.android.lixiang.base.utils.view.BounceScrollView>
+
+        <View
+            android:id="@+id/mChooseSpeciesRLStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mAddTagToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/mChooseSpeciesRLStatusBar"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText.Gray" >
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mAddTagDoneBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="确认"
+                android:padding="13dp"
+                android:layout_marginEnd="5dp"
+                android:textStyle="normal"
+                android:textColor="#6299FF"
+                android:textSize="14dp"/>
+        </android.support.v7.widget.Toolbar>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

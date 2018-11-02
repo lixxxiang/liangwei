@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <com.android.lixiang.base.utils.view.BounceScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mApprovalInfomationTToolbar"
+            android:background="#FFF"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/bsv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/mInfoAreaRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="317dp"
+                        android:background="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="13dp"
+                                    android:text="审批材料编号"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="12dp" />
+
+                                <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                                    android:id="@+id/mIdET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="95dp"
+                                    android:layout_marginRight="13dp"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:hint="请输入审批材料编号"
+                                    android:singleLine="true"
+                                    android:textColor="#4A4A4A"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="12dp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2px"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="#DCDCDC" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                                    android:id="@+id/mWorkET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="71dp"
+                                    android:layout_marginRight="13dp"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:hint="请输入经办单位"
+                                    android:singleLine="true"
+                                    android:textColor="#4A4A4A"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="12dp" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="13dp"
+                                    android:text="经办单位"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="12dp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2px"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="#DCDCDC" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/mSelectDateRL"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:focusable="true">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="15dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="13dp"
+                                    android:background="@drawable/ic_foward" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/mDateTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="71dp"
+                                    android:layout_marginRight="35dp"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="12dp" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="13dp"
+                                    android:text="审批日期"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="12dp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2px"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="#DCDCDC" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                                    android:id="@+id/mLostET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="71dp"
+                                    android:layout_marginRight="13dp"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:hint="请输入缺失材料"
+                                    android:singleLine="true"
+                                    android:textColor="#4A4A4A"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="12dp" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="13dp"
+                                    android:text="缺失材料"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="12dp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2px"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="#DCDCDC" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/mIdRL"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:focusable="true">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/mIdTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="83dp"
+                                    android:layout_marginRight="35dp"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="12dp" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="13dp"
+                                    android:text="关联信息ID"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="12dp" />
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="15dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="13dp"
+                                    android:background="@drawable/ic_foward" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2px"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="#DCDCDC" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/mOutlineRL"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:focusable="true">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/appCompatTextView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="83dp"
+                                    android:layout_marginRight="35dp"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:text="已标记"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="12dp" />
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/appCompatImageView9"
+                                    android:layout_width="8dp"
+                                    android:layout_height="15dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="13dp"
+                                    android:background="@drawable/ic_foward" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="13dp"
+                                    android:text="违章建筑轮廓"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="12dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/mView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp"
+                        android:layout_below="@+id/mInfoAreaRL"
+                        android:background="#ECECEC" />
+
+                    <RelativeLayout
+                        android:id="@+id/mRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="266dp"
+                        android:layout_below="@+id/mInfoAreaRL"
+                        android:layout_marginTop="14dp"
+                        android:background="#FFFFFF">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="21dp"
+                            android:text="备注"
+                            android:textColor="#5C5C5C"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2px"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="52dp"
+                            android:layout_marginRight="45dp"
+                            android:background="#D9D9D9" />
+
+                        <RelativeLayout
+                            android:id="@+id/mPlantLocationRL"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginRight="45dp"
+                            android:background="#F0F0F0">
+
+                            <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                                android:id="@+id/mRemarkET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#F0F0F0"
+                                android:gravity="left|top"
+                                android:hint="请输入备注"
+                                android:imeOptions="actionDone"
+                                android:inputType="textMultiLine"
+                                android:maxLength="800"
+                                android:minLines="7"
+                                android:padding="12dp"
+                                android:paddingLeft="11dp"
+                                android:textColor="#686868"
+                                android:textCursorDrawable="@drawable/color_cursor"
+                                android:textSize="12dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/mAIPhotoAreaRL"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/mPlantLocationRL"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginRight="45dp">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/mAIUploadImagesIV"
+                                android:layout_width="31dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/img_camera" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/mAIImage1"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/img_add_image"
+                                android:transitionName="image"
+                                android:visibility="gone" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/mAIImage2"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="59dp"
+                                android:background="@drawable/img_add_image"
+                                android:transitionName="image"
+                                android:visibility="gone" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/mAIImage3"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="118dp"
+                                android:background="@drawable/img_add_image"
+                                android:transitionName="image"
+                                android:visibility="gone" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/mAIImage4"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="177dp"
+                                android:background="@drawable/img_add_image"
+                                android:transitionName="image"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.android.lixiang.base.utils.view.BounceScrollView>
+
+        <View
+            android:id="@+id/fake_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mApprovalInfomationTToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/fake_status_bar"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText.Gray" />
+
+        <RelativeLayout
+            android:id="@+id/mCommitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#C5C5C5"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignParentBottom="true"
+            >
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交信息"
+            android:id="@+id/mTV"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"/>
+
+        <ProgressBar
+            android:id="@+id/mProgressbar"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="#FFF"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout></android.support.constraint.ConstraintLayout>

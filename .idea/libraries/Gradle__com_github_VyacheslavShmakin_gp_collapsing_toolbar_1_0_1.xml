@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.VyacheslavShmakin:gp-collapsing-toolbar-1.0.1">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/gp-collapsing-toolbar-1.0.1.aar/d06da003ab0c80d9007d09e676de0a01/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/gp-collapsing-toolbar-1.0.1.aar/d06da003ab0c80d9007d09e676de0a01/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/gp-collapsing-toolbar-1.0.1.aar/d06da003ab0c80d9007d09e676de0a01/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.VyacheslavShmakin/gp-collapsing-toolbar/1.0.1/751f46bfa91075b5e8a52491c7965d96e7d7e818/gp-collapsing-toolbar-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
