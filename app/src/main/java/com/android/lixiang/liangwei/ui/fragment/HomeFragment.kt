@@ -117,7 +117,7 @@ class HomeFragment : SupportFragment(), View.OnClickListener, LocationSource, AM
 
                 mLatlngTV.text = mLatlng
                 mInfoCollectTitleTV.text = mAddress
-
+                mLoadingRL.visibility = View.GONE
                 if (!letSharedPreferencesOnlyDoOnceFlag!!) {
                     val mSharedPreferences: SharedPreferences? = activity!!.getSharedPreferences("ADDRESS", Context.MODE_PRIVATE)
                     val editor = mSharedPreferences!!.edit()
@@ -323,6 +323,7 @@ class HomeFragment : SupportFragment(), View.OnClickListener, LocationSource, AM
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            location()
         }
     }
 

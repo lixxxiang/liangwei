@@ -29,9 +29,9 @@
         tools:ignore="GoogleAppIndexingWarning">
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="86071610508c7ef17339c03c4452f0c9" />
+            android:value="96b5a23a62d1ccb2247f3b669f5d3ab5" />
 
-        <!-- work 96b5a23a62d1ccb2247f3b669f5d3ab5  home 70db90129735eeefdc38037057e1e772-->
+        <!-- work 96b5a23a62d1ccb2247f3b669f5d3ab5  home 70db90129735eeefdc38037057e1e772 offical 86071610508c7ef17339c03c4452f0c9-->
         <service android:name="com.amap.api.location.APSService" />
 
         <activity android:name="com.android.lixiang.liangwei.ui.activity.MainActivity"

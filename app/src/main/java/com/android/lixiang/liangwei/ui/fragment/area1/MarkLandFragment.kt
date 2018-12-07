@@ -350,23 +350,23 @@ class MarkLandFragment : SupportFragment(), View.OnClickListener, MapboxMap.OnSt
 
             mZoomInBtn -> {
                 ++ZOOM_LEVEL
-                mapboxMap!!.animateCamera(CameraUpdateFactory.zoomIn())
+                mapboxMap.animateCamera(CameraUpdateFactory.zoomIn())
             }
 
             mZoomOutBtn -> {
                 --ZOOM_LEVEL
-                mapboxMap!!.animateCamera(CameraUpdateFactory.zoomOut())
+                mapboxMap.animateCamera(CameraUpdateFactory.zoomOut())
             }
 
             mLayerBtn -> {
                 if (layerFlag == -1) {
-                    mapboxMap!!.setStyleUrl("http://202.111.178.10/cgwx/resource/wenchang.json")
+                    mapboxMap.setStyleUrl("http://202.111.178.10/cgwx/resource/wenchang.json")
                     layerFlag = 0
                 } else if (layerFlag == 0) {
-                    mapboxMap!!.setStyleUrl("http://202.111.178.10/cgwx/resource/wenchang_plotting.json")
+                    mapboxMap.setStyleUrl("http://202.111.178.10/cgwx/resource/wenchang_plotting.json")
                     layerFlag = 1
                 } else if (layerFlag == 1) {
-                    mapboxMap!!.setStyleUrl("http://bmob-cdn-20607.b0.upaiyun.com/2018/08/27/981883084077745280e89583ff09ee42.json")
+                    mapboxMap.setStyleUrl("http://bmob-cdn-20607.b0.upaiyun.com/2018/08/27/981883084077745280e89583ff09ee42.json")
                     layerFlag = -1
                 }
             }

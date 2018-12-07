@@ -69,6 +69,7 @@ class LoginFragment : BaseMvpFragment<LoginPresenter>(), View.OnClickListener, L
             editor.apply()
             popTo(findFragment(HomeFragment().javaClass).javaClass, false)
             val snackBar = Snackbar.make(view!!, "登录成功", Snackbar.LENGTH_SHORT)
+
             snackBar.show()
         } else if (loginBean.message == "密码不正确") {
             Toast.makeText(activity, "密码错误", Toast.LENGTH_LONG).show()

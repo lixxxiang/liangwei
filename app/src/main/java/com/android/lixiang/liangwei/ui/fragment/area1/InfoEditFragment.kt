@@ -1,11 +1,14 @@
 package com.android.lixiang.liangwei.ui.fragment.area1
 
 import android.annotation.SuppressLint
+import android.annotation.TargetApi
 import android.app.DatePickerDialog
 import android.content.*
 import android.graphics.Color
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.support.annotation.RequiresApi
 import android.support.design.widget.Snackbar
 import android.support.v4.app.ActivityCompat
 import android.support.v4.app.ActivityOptionsCompat
@@ -20,6 +23,7 @@ import android.view.ViewGroup
 import android.widget.*
 import com.android.lixiang.base.net.RestClient
 import com.android.lixiang.base.ui.fragment.BaseMvpFragment
+import com.android.lixiang.base.utils.view.DimenUtil
 import com.android.lixiang.base.utils.view.StatusBarUtil
 import com.android.lixiang.liangwei.GlideSimpleLoader
 import com.android.lixiang.liangwei.R
@@ -116,11 +120,9 @@ class InfoEditFragment : BaseMvpFragment<InfoEditPresenter>(), View.OnClickListe
     private var PERIMETER: String? = null
     private var imageCounts: Int? = 0
     private var URL: String? = null
-
     private var iwHelper: ImageWatcherHelper? = null
     private val pictureList = ArrayList<Uri>()
     private var mapping = SparseArray<ImageView>()
-
     private var isNetworkConnected: String? = null
     private var intentFilter: IntentFilter? = null
     private var networkChangeReceiver: NetworkChangeReceiver? = null
@@ -605,6 +607,9 @@ class InfoEditFragment : BaseMvpFragment<InfoEditPresenter>(), View.OnClickListe
     }
 
 
+    @SuppressLint("NewApi")
+    @TargetApi(Build.VERSION_CODES.M)
+    @RequiresApi(Build.VERSION_CODES.M)
     private fun initViews() {
         StatusBarUtil.setTranslucentForImageViewInFragment(activity, 0, null)
         mAcceptInsuranceToolbar.title = ""
@@ -621,6 +626,13 @@ class InfoEditFragment : BaseMvpFragment<InfoEditPresenter>(), View.OnClickListe
         if (activity is ImageWatcherHelper.Provider) {
             iwHelper = ImageWatcherHelper.with(activity, GlideSimpleLoader())
         }
+
+//        mIdEditSV.setOnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
+//            val dp = DimenUtil().px2dip(activity!!, DimenUtil().dip2px(activity!!, scrollY.toFloat()).toFloat())
+//            if (dp > 231) {
+//                Toast.makeText(activity!!, " dd", Toast.LENGTH_LONG).show()
+//            }
+//        }
 
         mFileArray = arrayOf(File(""), File(""), File(""), File(""))
 
@@ -970,10 +982,12 @@ class InfoEditFragment : BaseMvpFragment<InfoEditPresenter>(), View.OnClickListe
         return inflater.inflate(R.layout.fragment_info_edit, container, false)
     }
 
+    @SuppressLint("NewApi")
+    @TargetApi(Build.VERSION_CODES.M)
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         initViews()
-
     }
 
     override fun onCreateFragmentAnimator(): FragmentAnimator {

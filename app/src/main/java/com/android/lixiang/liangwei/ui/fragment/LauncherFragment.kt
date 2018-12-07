@@ -46,7 +46,7 @@ class LauncherFragment : SupportFragment(), View.OnClickListener {
         mOpenRL.setOnClickListener(this)
         handler.postDelayed({
             startWithPop(HomeFragment().newInstance())
-        }, 5000)
+        }, 3000)
     }
 
     override fun onCreateFragmentAnimator(): FragmentAnimator {

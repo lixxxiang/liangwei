@@ -111,6 +111,30 @@
                 android:ellipsize="end"
                 android:textSize="12dp" />
 
+            <RelativeLayout
+                android:id="@+id/mLoadingRL"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="140dp">
+                <ProgressBar
+                    android:id="@+id/mProgressBar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:indeterminateTint="#FFF"
+                    android:indeterminateTintMode="src_atop"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="位置信息加载中..."
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#FFF"
+                    android:layout_toRightOf="@+id/mProgressBar" />
+            </RelativeLayout>
+
+
+
             <com.android.lixiang.base.utils.view.BounceScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
